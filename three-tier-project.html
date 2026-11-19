@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AWS Three-Tier Project | Yash Bagate</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h2>Yash Bagate</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#projects">Projects</a>
+            </nav>
+        </header>
+
+        <section class="project-details">
+            <h1>AWS Three-Tier Application</h1>
+
+            <h2>Project Overview</h2>
+            <p>
+                Deployed a Student Registration Application using Amazon S3, EC2 and RDS MySQL. The frontend
+                communicates with a Spring Boot backend, which stores registration data in MySQL.
+            </p>
+
+            <h2>Architecture</h2>
+            <div class="architecture-flow">
+                <div>Users / Browser</div>
+                <div>Amazon S3 - Frontend</div>
+                <div>Amazon EC2 - Spring Boot API</div>
+                <div>Amazon RDS - MySQL</div>
+            </div>
+
+            <h2>AWS Services Used</h2>
+            <ul>
+                <li>Amazon S3 - Static Website Hosting</li>
+                <li>Amazon EC2 - Backend Hosting</li>
+                <li>Amazon RDS - MySQL Database</li>
+                <li>IAM - Permissions</li>
+                <li>Security Groups - Network Access</li>
+            </ul>
+
+            <h2>Deployment Steps</h2>
+            <ol>
+                <li>Created an RDS MySQL database.</li>
+                <li>Launched an EC2 instance.</li>
+                <li>Installed Java and Maven.</li>
+                <li>Built the Spring Boot application.</li>
+                <li>Connected backend to RDS.</li>
+                <li>Hosted frontend using Amazon S3.</li>
+                <li>Tested student registration.</li>
+            </ol>
+
+            <h2>Challenges and Solutions</h2>
+            <p>
+                Resolved database connectivity issues, security group configuration problems and backend application
+                startup errors.
+            </p>
+
+            <h2>Project Status</h2>
+            <p>Successfully tested during deployment. AWS resources were later removed to manage cloud costs.</p>
+
+            <a href="index.html#projects"> Back to Projects </a>
+        </section>
+    </body>
+</html>
