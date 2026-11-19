@@ -1,0 +1,250 @@
+
+/* General Website Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #38bdf8;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* All Sections */
+section {
+    padding: 80px 10%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Home Section */
+#home {
+    min-height: 450px;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #38bdf8;
+}
+
+#home p {
+    margin-bottom: 25px;
+}
+
+#home a {
+    background-color: #38bdf8;
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f1f5f9;
+}
+
+/* Projects Section */
+#projects {
+    background-color: white;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e2e8f0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
+
+
+/* Skills Cards */
+.skills-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+}
+
+.skill-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+/* Project Cards */
+.projects-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card span {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    background-color: #ffffff !important;
+    color: #1e3a8a !important;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.resume-btn:hover {
+    background-color: #e2e8f0 !important;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    background-color: #e2e8f0;
+}
+
+#contact p {
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    background-color: #2563eb;
+}
