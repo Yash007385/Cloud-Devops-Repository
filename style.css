@@ -309,3 +309,38 @@ section h2 {
 .project-btn:hover {
     background-color: #1e40af;
 }
+
+
+/* AWS Architecture Diagram */
+.aws-architecture {
+    max-width: 650px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aws-box {
+    background: #eff6ff;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+    padding: 22px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.aws-box h3 {
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.aws-box p {
+    color: #475569;
+}
+
+.aws-arrow {
+    font-size: 30px;
+    color: #2563eb;
+    margin: 8px 0;
+}

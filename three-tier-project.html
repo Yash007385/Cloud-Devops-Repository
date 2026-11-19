@@ -25,12 +25,34 @@
                 communicates with a Spring Boot backend, which stores registration data in MySQL.
             </p>
 
-            <h2>Architecture</h2>
-            <div class="architecture-flow">
-                <div>Users / Browser</div>
-                <div>Amazon S3 - Frontend</div>
-                <div>Amazon EC2 - Spring Boot API</div>
-                <div>Amazon RDS - MySQL</div>
+            <h2>Project Architecture</h2>
+
+            <div class="aws-architecture">
+                <div class="aws-box">
+                    <h3>Users / Browser</h3>
+                    <p>Student Registration</p>
+                </div>
+
+                <div class="aws-arrow">↓</div>
+
+                <div class="aws-box">
+                    <h3>Amazon S3</h3>
+                    <p>Frontend - Static Website</p>
+                </div>
+
+                <div class="aws-arrow">↓</div>
+
+                <div class="aws-box">
+                    <h3>Amazon EC2</h3>
+                    <p>Backend - Spring Boot API</p>
+                </div>
+
+                <div class="aws-arrow">↓</div>
+
+                <div class="aws-box">
+                    <h3>Amazon RDS MySQL</h3>
+                    <p>Student Database</p>
+                </div>
             </div>
 
             <h2>AWS Services Used</h2>
